@@ -4,7 +4,7 @@
 
 </head>
 
-<body>
+<body style="padding:25pt;">
 <center>
 
 <img src='me.jpg'/>
@@ -12,12 +12,11 @@
 </center>
 <br/>
 
-<p style="background-color:tomato;"> !!! Website is under construction if you didn't notice !!! </p>
+<!-- <p style="background-color:tomato;">  Website is under construction if you didn't notice </p> -->
 <h1> Science </h1>
 <h2> Publications </h2>
 
 <ul>
-<li> 
 <li> Structack: Structure-based Adversarial Attacks on Graph Neural Networks.
 <br/>H Hussain, T Duricic, E Lex, D Helic, M Strohmaier, R Kern.
 <br/>Proceedings of the 32st ACM Conference on Hypertext and Social Media. 2021.
@@ -35,18 +34,48 @@ Should We Embed in Chemistry? A Comparison of Unsupervised Transfer Learning wit
 </li>
 <li>Empirical Comparison of Graph Embeddings for Trust-Based Collaborative Filtering.
 <br/>T Duricic, H Hussain, E Lacic, D Kowald, D Helic, E Lex
-<br/>International Symposium on Methodologies for Intelligent Systems, 181-191. </li>
+<br/>International Symposium on Methodologies for Intelligent Systems, 181-191.
+<br/><a href="https://arxiv.org/abs/2003.13345">[preprint]</a>
+</li>
 </ul>
 
 <h2> Open Theses </h2>
-
+<ol>
+<li> Fair predictions with graph data.
+<p> <b> Motivation. </b>
+	Recent works showed that graph data can exacerbate unfairness of predictions. How does this happen? And how can we prevent it.</p>
+</li>
+<li> Estimating graph homophily for better GNN predictions.
+<p> <b> Premise. </b>
+	Recent work has shown that classical GNNs work only for homophilic graphs, i.e., graphs where adjacent nodes are more likely to have the same label or similar features. More recently, novel GNN models have been proposed to address this issue and improve the performance on heterophilic graphs. Most node classification approaches follow a semi-supervised learning paradigm, where only a small fraction of nodes is labeled.</p>
+<p> <b> Objective. </b>
+	Our aim is to estimate (efficiently and accurately) whether a graph is homophilic or heterophilic in semi-supervised settings, aiding to choose a suitable GNN model for the problem.</p>
+<p> <b> Methods. </b>
+	We test different measures which simulate/estimate homophily and/or predict which type of GNNs to use for a given dataset. We observe the correlation of the measure with the actual homophily.</p>
+	We perform these experiments on empirical as well as synthetic graphs.
+<p> <b> Impact. </b>
+	This work can help practitioners choose suitable GNN models for their node classification tasks.</p>
+</li>
+<li> Adversarial attack noticeability in dynamic networks.
+<p> <b> Premise. </b>
+	GNNs suffer (like many deep learning models) from adversarial attacks. Recent works have studied and introduced different types of practical attacks on graph data (injecting/removing nodes/links in a network, changing features of nodes). These studies were mostly accompanied by insights on attack detection (or noticeability). However, the noticeability insights are mostly limited to static network statistics, e.g., degree distribution. In a dynamic environment, nodes, links, and features are changing all the time.</p>
+<p> <b> Objective. </b>
+	Is it better to measure noticeability through comparing to a dynamic model? If so, we need to introduce a methodology to measure attack noticeability in a realistic scenario where the network grows with new nodes/edges.</p>
+<p> <b> Methods. </b>
+	Testing noticeability on temporal/dynamic gaphs (graphs with edge timestamps) and on network growth models for static graphs.
+	We can look for a suitable network growth model that is better suited to measure attack noticeability.</p>
+<p> <b> Impact. </b>
+	The findings should help researchers who work on developing GNN attacks to better define their attacks' ability to be unnoticed.
+	The findings should also help practitioners (operators of vulnurable network data) to better detect adversarial attacks.</p>
+</li>
+</ol>
 
 <h2> Data Team </h2>
-Each semester, we participate in data challenges together in the <a href="https://www.tugraz.at/studium/studieren-an-der-tu-graz/studierende/studierendenteams/wettbewerbs-und-fokuste">TU Graz data team</a>.
+<p>Each semester, we participate in data challenges together in the <a href="https://www.tugraz.at/studium/studieren-an-der-tu-graz/studierende/studierendenteams/wettbewerbs-und-fokuste">TU Graz data team</a>.
 <br/>
-<a href="https://goo.gl/forms/fOWbptLuZpert5D23">Join us now</a> for free drinks and pizzas! ... well, and some data science too.
+<a href="https://goo.gl/forms/fOWbptLuZpert5D23">Join us now</a> for free drinks and pizzas! ... well, and some data science too.</p>
 
-<h2> News </h2>
+<h2> News timeline </h2>
 <h3> Good News </h3>
 <ul>
 <li> 21-09-07 - Our paper titled <b>"The Interplay between Communities and Homophily in Semi-supervised Classification Using Graph Neural Networks."</b> was accepted at Applied Network Science special issue. <a href="papers/apns21.pdf">[preprint]</a> </li>
